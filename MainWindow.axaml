@@ -1,0 +1,20 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Marigolds.MainWindow"
+        Title="Marigolds">
+
+    <StackPanel Spacing="10" HorizontalAlignment="Center" VerticalAlignment="Center">
+      <Grid ColumnDefinitions="Auto, Auto, Auto">
+        <ToggleButton Name="Numbers" Grid.Column="0" IsChecked="true">Numbers</ToggleButton>
+        <ToggleButton Name="Letters" Grid.Column="1">Letters</ToggleButton>
+        <ToggleButton Name="Symbols" Grid.Column="2">Symbols</ToggleButton>
+      </Grid>
+      <NumericUpDown HorizontalAlignment="Stretch" Name="Length" Value="16" Minimum="4" Maximum="256" Increment="1"/>
+      <Button HorizontalAlignment="Stretch" Click="Generate">
+        <TextBlock HorizontalAlignment="Center">Generate</TextBlock>
+      </Button>
+    </StackPanel>
+</Window>
